@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEGA FOOD | Taste the Happiness</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-logo">MEGA<span>FOOD.</span></div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="nav-container">
+
+    <a href="#" class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-burger"></i></span>
+      MEGA<span>FOOD</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#categories" class="nav-link">Menu</a>
+      <a href="#popular" class="nav-link">Popular</a>
+      <a href="#offers" class="nav-link">Offers</a>
+      <a href="#about" class="nav-link">About</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" title="Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+      <button class="icon-btn" id="searchBtn" title="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+      <button class="icon-btn favorite-nav" id="favoritesBtn" title="Favorites">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+
+      <button class="icon-btn user-btn" id="userBtn" title="Account">
+        <i class="fa-regular fa-user"></i>
+      </button>
+
+      <button class="cart-btn" id="cartBtn">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- SEARCH -->
+<div class="search-panel" id="searchPanel">
+  <div class="search-inner">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" id="searchInput" placeholder="Nima qidiryapsiz? Burger, pizza...">
+    <button id="closeSearch"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-circle"></div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-label">
+        <span class="label-dot"></span>
+        FRESH • HOT • DELICIOUS
+      </div>
+
+      <h1>
+        TASTE THE<br>
+        <span>HAPPINESS.</span>
+      </h1>
+
+      <p>
+        Har bir luqmada yangi ta'm, har bir buyurtmada
+        haqiqiy baxt. Sevimli taomlaringiz endi yanada yaqin!
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#popular" class="btn-primary">
+          Order Now <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="#categories" class="btn-outline">
+          Explore Menu
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <h3>20+</h3>
+          <p>Food varieties</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <h3>4.9<span>★</span></h3>
+          <p>Customer rating</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <h3>30<span>min</span></h3>
+          <p>Fast delivery</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-image-circle"></div>
+
+      <img
+        class="hero-food"
+        src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=90"
+        alt="Mega Food burger"
+      >
+
+      <div class="floating-card rating-card">
+        <div class="rating-icon"><i class="fa-solid fa-star"></i></div>
+        <div>
+          <strong>4.9 Rating</strong>
+          <small>1000+ happy customers</small>
+        </div>
+      </div>
+
+      <div class="floating-card delivery-card">
+        <i class="fa-solid fa-motorcycle"></i>
+        <div>
+          <strong>Fast Delivery</strong>
+          <small>30 minutes</small>
+        </div>
+      </div>
+
+      <div class="hero-price">
+        <span>Starting from</span>
+        <strong>25 000 <small>UZS</small></strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-bottom">
+    <span>SCROLL TO EXPLORE</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container features-grid">
+    <div class="feature-item">
+      <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+      <div>
+        <h3>Fresh Ingredients</h3>
+        <p>Har kuni yangi mahsulotlar</p>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+      <div>
+        <h3>Fast Delivery</h3>
+        <p>Tez va ishonchli yetkazish</p>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon"><i class="fa-solid fa-fire"></i></div>
+      <div>
+        <h3>Hot & Delicious</h3>
+        <p>Issiq va mazali taomlar</p>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon"><i class="fa-solid fa-heart"></i></div>
+      <div>
+        <h3>Made With Love</h3>
+        <p>Har bir taom mehr bilan</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories section-padding" id="categories">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="section-label">OUR MENU</span>
+        <h2>Explore Our <span>Menu</span></h2>
+        <p>O'zingiz yoqtirgan ta'mni tanlang</p>
+      </div>
+    </div>
+
+    <div class="category-list" id="categoryList">
+      <button class="category-btn active" data-category="all">
+        <i class="fa-solid fa-utensils"></i> All Food
+      </button>
+      <button class="category-btn" data-category="burger">
+        <i class="fa-solid fa-burger"></i> Burgers
+      </button>
+      <button class="category-btn" data-category="pizza">
+        <i class="fa-solid fa-pizza-slice"></i> Pizza
+      </button>
+      <button class="category-btn" data-category="lavash">
+        <i class="fa-solid fa-wrap"></i> Lavash
+      </button>
+      <button class="category-btn" data-category="chicken">
+        <i class="fa-solid fa-drumstick-bite"></i> Chicken
+      </button>
+      <button class="category-btn" data-category="snack">
+        <i class="fa-solid fa-cookie-bite"></i> Snacks
+      </button>
+      <button class="category-btn" data-category="drink">
+        <i class="fa-solid fa-glass-water"></i> Drinks
+      </button>
+      <button class="category-btn" data-category="dessert">
+        <i class="fa-solid fa-ice-cream"></i> Desserts
+      </button>
+    </div>
+
+    <div class="products-grid" id="productsGrid"></div>
+
+    <div class="load-more-container">
+      <button class="btn-outline load-more" id="loadMore">
+        View All Menu <i class="fa-solid fa-arrow-down"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR -->
+<section class="popular-section section-padding" id="popular">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="section-label">CUSTOMER FAVORITES</span>
+        <h2>Most <span>Popular</span></h2>
+        <p>Eng ko'p buyurtma qilinadigan taomlar</p>
+      </div>
+      <a href="#categories" class="view-link">View Menu <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="popular-grid" id="popularGrid"></div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="offer-section section-padding" id="offers">
+  <div class="container">
+    <div class="offer-banner">
+      <div class="offer-content">
+        <span class="offer-tag">LIMITED TIME OFFER</span>
+        <h2>GET 20% OFF<br>YOUR FIRST ORDER!</h2>
+        <p>Yangi mijozlar uchun maxsus taklif.</p>
+        <button class="btn-white" id="offerBtn">
+          Order Now <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <div class="promo-code">PROMO: <strong>MEGA20</strong></div>
+      </div>
+
+      <div class="offer-image">
+        <img
+          src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=85"
+          alt="Burger combo"
+        >
+        <div class="discount-badge">-20%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section section-padding" id="about">
+  <div class="container about-grid">
+    <div class="about-image">
+      <img
+        src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=85"
+        alt="Mega Food restaurant food"
+      >
+      <div class="about-experience">
+        <strong>100%</strong>
+        <span>Fresh & Delicious</span>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <span class="section-label">ABOUT MEGA FOOD</span>
+      <h2>Good Food.<br><span>Good Mood.</span></h2>
+      <p>
+        Bizning maqsadimiz har bir mijozga mazali, yangi va sifatli
+        taomlarni taqdim etish. MEGA FOOD bilan ta'm va quvonch birlashadi.
+      </p>
+
+      <div class="about-points">
+        <div><i class="fa-solid fa-circle-check"></i> Fresh ingredients</div>
+        <div><i class="fa-solid fa-circle-check"></i> Professional chefs</div>
+        <div><i class="fa-solid fa-circle-check"></i> Fast delivery</div>
+        <div><i class="fa-solid fa-circle-check"></i> Great taste</div>
+      </div>
+
+      <a href="#categories" class="btn-primary">
+        Discover More <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="container newsletter-inner">
+    <div>
+      <span class="section-label">STAY CONNECTED</span>
+      <h2>Get special offers <span>in your inbox</span></h2>
+      <p>Yangiliklar va maxsus chegirmalardan birinchi bo'lib xabardor bo'ling.</p>
+    </div>
+
+    <form id="newsletterForm" class="newsletter-form">
+      <input type="email" placeholder="Email manzilingiz..." required>
+      <button type="submit">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-burger"></i></span>
+        MEGA<span>FOOD</span>
+      </a>
+      <p>Good food. Great mood.<br>Always fresh, always delicious.</p>
+
+      <div class="socials">
+        <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://telegram.org/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Explore</h3>
+      <a href="#home">Home</a>
+      <a href="#categories">Menu</a>
+      <a href="#popular">Popular</a>
+      <a href="#offers">Offers</a>
+      <a href="#about">About Us</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Categories</h3>
+      <a href="#categories">Burgers</a>
+      <a href="#categories">Pizza</a>
+      <a href="#categories">Lavash</a>
+      <a href="#categories">Chicken</a>
+      <a href="#categories">Drinks</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p><i class="fa-solid fa-phone"></i> +998 90 123 45 67</p>
+      <p><i class="fa-solid fa-envelope"></i> hello@megafood.uz</p>
+      <p><i class="fa-solid fa-location-dot"></i> Uzbekistan</p>
+      <p><i class="fa-solid fa-clock"></i> 09:00 — 23:00</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom container">
+    <p>© 2026 MEGA FOOD. All rights reserved.</p>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="drawer-header">
+    <h2>Your Cart <span id="drawerCount">(0)</span></h2>
+    <button class="close-btn" id="closeCart"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <div class="cart-items" id="cartItems"></div>
+
+  <div class="cart-footer">
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">0 so'm</strong>
+    </div>
+    <div class="cart-subtotal">
+      <span>Delivery</span>
+      <strong id="deliveryPrice">10 000 so'm</strong>
+    </div>
+    <div class="cart-total">
+      <span>Total</span>
+      <strong id="cartTotal">0 so'm</strong>
+    </div>
+    <button class="checkout-btn" id="checkoutBtn">
+      Checkout <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </div>
+</aside>
+
+<!-- AUTH MODAL -->
+<div class="modal" id="authModal">
+  <div class="modal-box auth-box">
+    <button class="close-btn modal-close" id="closeAuth"><i class="fa-solid fa-xmark"></i></button>
+
+    <div class="auth-logo">
+      <i class="fa-solid fa-burger"></i> MEGA FOOD
+    </div>
+
+    <div class="auth-tabs">
+      <button class="auth-tab active" data-auth="login">Login</button>
+      <button class="auth-tab" data-auth="register">Register</button>
+    </div>
+
+    <form id="authForm">
+      <div class="form-group" id="nameGroup">
+        <label>Full Name</label>
+        <input type="text" id="authName" placeholder="Ism va familiya">
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="authEmail" placeholder="example@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <div class="password-field">
+          <input type="password" id="authPassword" placeholder="Parolingiz" required minlength="6">
+          <button type="button" id="togglePassword"><i class="fa-regular fa-eye"></i></button>
+        </div>
+      </div>
+
+      <div class="auth-extra" id="loginExtra">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#" id="forgotPassword">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn-primary auth-submit" id="authSubmit">
+        Login <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </form>
+
+    <p class="auth-note">By continuing, you agree to our Terms & Privacy Policy.</p>
+  </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal" id="checkoutModal">
+  <div class="modal-box checkout-box">
+    <button class="close-btn modal-close" id="closeCheckout"><i class="fa-solid fa-xmark"></i></button>
+
+    <h2>Complete Your <span>Order</span></h2>
+    <p class="checkout-desc">Yetkazib berish ma'lumotlarini kiriting.</p>
+
+    <form id="checkoutForm">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="checkoutName" required placeholder="Ism va familiya">
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="checkoutPhone" required placeholder="+998 90 000 00 00">
+      </div>
+
+      <div class="form-group">
+        <label>Delivery Address</label>
+        <input type="text" id="checkoutAddress" required placeholder="Manzilingiz">
+      </div>
+
+      <div class="form-group">
+        <label>Payment Method</label>
+        <select id="paymentMethod">
+          <option value="cash">Naqd pul</option>
+          <option value="card">Karta (demo)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Order Note</label>
+        <textarea id="checkoutNote" placeholder="Buyurtma haqida izoh..." rows="3"></textarea>
+      </div>
+
+      <div class="checkout-summary">
+        <span>Order Total</span>
+        <strong id="checkoutTotal">0 so'm</strong>
+      </div>
+
+      <button type="submit" class="btn-primary auth-submit">
+        Place Order <i class="fa-solid fa-check"></i>
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <i class="fa-solid fa-circle-check"></i>
+  <span id="toastMessage">Success!</span>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="modal" id="successModal">
+  <div class="modal-box success-box">
+    <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+    <h2>Order Successful!</h2>
+    <p>Buyurtmangiz muvaffaqiyatli qabul qilindi.</p>
+    <div class="order-number" id="orderNumber"></div>
+    <button class="btn-primary" id="successClose">Continue Shopping</button>
+  </div>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>
